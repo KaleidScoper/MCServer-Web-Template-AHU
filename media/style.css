@@ -27,7 +27,7 @@ body {
     padding-top:5rem;
     margin-top: -5rem;
 }
-#discord {
+#qqgroup {
     padding-top:5rem;
     margin-top: -5rem;
 }
@@ -372,12 +372,16 @@ body {
     align-items: center;
 }
 
-.main4_dc_widget {
+.main4_qq_widget {
     border-radius: var(--roundness);
     border: 0;
+    width: 350px;
+    height: 500px;
+    object-fit: cover;
+    background-color: var(--background1);
 }
 
-.main4_dc_div {
+.main4_qq_div {
     margin: 2rem;
     display: flex;
     flex-direction: row;
@@ -386,12 +390,12 @@ body {
     max-width: 48rem;
 }
 
-.main4_dc_description_div {
+.main4_qq_description_div {
     display: flex;
     flex-direction: column;
 }
 
-.main4_dc_description_title {
+.main4_qq_description_title {
     margin: 2rem;
     text-align: center;
     font-size:1.5rem;
@@ -400,13 +404,13 @@ body {
 }
 
 
-.main4_dc_description {
+.main4_qq_description {
     margin-left:1.5rem;
     margin-right:1.5rem;
     margin-bottom:1.5rem;
     font-size:1.2rem;
 }
-.main4_dc_button_a{
+.main4_qq_button_a{
     text-decoration: none;
     color: #fff;
     text-align: center;
@@ -418,12 +422,12 @@ body {
     margin-bottom: 1.5rem;
     transition: all .5s;
 }
-.main4_dc_button_a:hover{
+.main4_qq_button_a:hover{
     border: solid 1px var(--accent2);
     background-color: var(--accent2);
     transform: scale(1.05)
 }
-.main4_dc_button {
+.main4_qq_button {
     padding:.5rem;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
@@ -444,8 +448,10 @@ body {
 
 .main5_admin_div{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
     padding: 1rem 1rem .5rem 1rem;
 }
 .main5_admins_div{
@@ -469,9 +475,11 @@ body {
 
 .main5_admins_img {
     border-radius: var(--roundness);
-    max-width: 45%;
-    max-height: 100%;
+    width: 16rem;
+    height: 16rem;
+    object-fit: cover;
     align-self: center;
+    flex-shrink: 0;
 }
 .main5_admins_description_div {
     display: flex;
@@ -539,10 +547,12 @@ body {
 
 .main5_supporters_img {
     border-radius: var(--roundness);
-    max-width: 25%;
-    max-height: 100%;
+    width: 5rem;
+    height: 5rem;
+    object-fit: cover;
     align-self: center;
     margin: 1rem;
+    flex-shrink: 0;
 }
 .main5_supporters_description_div {
     display: flex;
@@ -699,6 +709,8 @@ body {
     .main5_admins_img {
         align-self: center;
         padding-top: 1rem;
+        width: 12rem;
+        height: 12rem;
     }
     .main5_admins_div{
         flex-direction: column;
@@ -708,12 +720,14 @@ body {
         max-width: 100%;
         padding: 2rem;
     }
-    .main4_dc_div {
+    .main4_qq_div {
         flex-direction: column;
     }
-    .main4_dc_widget {
+    .main4_qq_widget {
         height: 20rem;
         width: 100%;
+        max-width: 350px;
+        object-fit: cover;
     }
     .main3_join_div {
         min-width: 20rem;
