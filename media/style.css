@@ -208,6 +208,7 @@ body {
 .main1_logo_a {
     margin-bottom: var(--nice-padding);
     cursor: default;
+    text-decoration: none;
 }
 
 .main1_logo {
@@ -220,6 +221,30 @@ body {
 }
 .main1_logo:hover {
     transform: scale(1.05)
+}
+
+.main1_logo_text {
+    display: block;
+    align-self: center;
+    margin: 0;
+    padding: 2rem;
+    font-size: 5rem;
+    font-weight: 800;
+    text-align: center;
+    line-height: 1.3;
+    color: #fff;
+    text-shadow: 0 0 30px rgba(2, 219, 2, 0.5),
+                 0 0 60px rgba(2, 219, 2, 0.3);
+    transition: all .5s;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+}
+.main1_logo_text:hover {
+    transform: scale(1.08);
+    text-shadow: 0 0 40px rgba(2, 219, 2, 0.8),
+                 0 0 80px rgba(2, 219, 2, 0.5),
+                 0 0 120px rgba(2, 219, 2, 0.3);
+    color: var(--accent1);
 }
 
 .main1_description {
@@ -570,6 +595,12 @@ body {
 .main5_supporters_description_rank_supporter {
     color: #00f8ff;
 }
+.main5_supporters_description_rank_owner {
+    color: #3498db;
+}
+.main5_supporters_description_rank_admin {
+    color: #f82f2f;
+}
 .main5_supporters_description_title {
     text-align: center;
     font-size:1.3rem;
@@ -698,6 +729,10 @@ body {
     }
     .main1_logo {
         max-width: 16rem;
+    }
+    .main1_logo_text {
+        font-size: 3rem;
+        padding: 1rem;
     }
     .main1_description {
         font-size: 2.5rem;
